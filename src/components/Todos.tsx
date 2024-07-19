@@ -62,11 +62,15 @@ export default function Todos() {
               >
                 {data?.checked ? "Done" : "Mark as done"}
               </button>
+
               {data && data.id && (
                 <button onClick={() => handleDeleteTodo(data.id!)}>
                   Delete
                 </button>
               )}
+              <br />
+
+              <hr />
             </div>
           </li>
         ))}

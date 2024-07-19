@@ -56,7 +56,7 @@ export function useDeleteTodo() {
     mutationFn: (id: number) => deleteTodo(id),
 
     onSuccess: () => {
-      console.log("deleted successfully");
+      alert("success");
     },
 
     onSettled: async (_, error) => {
